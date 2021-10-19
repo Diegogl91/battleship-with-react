@@ -1,0 +1,26 @@
+.player, .pc{
+    margin: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.cell{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+}
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
