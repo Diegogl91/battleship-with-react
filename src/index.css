@@ -10,6 +10,7 @@
     background-color: blue;
 }
 
+
 .cell{
     display: inline-block;
     width: 25px;
@@ -23,4 +24,7 @@
 
 .orange{
     background-color: orange;
+}
+h5{
+    text-align: center;
 }

@@ -316,19 +316,19 @@ const Game = () => {
     return (
         <div className="container ">
             <div className="row player">
-                
+                <h5>Tablero Jugador</h5>
                 {playerBoard.map((row, rowIndex) => {
                     return (
                         <div className="row" key={rowIndex}>
                             {row.map((cell, cellIndex) => {
                                 return (
-                                    <div
+                                    <button
                                         disabled={playerBoard[rowIndex][cellIndex] == 2 || playerBoard[rowIndex][cellIndex] == 3}
                                         className={`cell ${cell == 0 || cell==1 ? "blue" : "" }` + `${cell == 2 ? "red" : ""} ${cell == 3 ? "orange":"" }`}
                                         key={cellIndex}
                                     >
                                         
-                                    </div>
+                                    </button>
                                 );
                             })}
                         </div>
@@ -336,6 +336,7 @@ const Game = () => {
                 })}
             </div>
             <div className="row pc">
+            <h5>Tablero Maquina</h5>
                 {pcBoard.map((row, rowIndex) => {
                     return (
                         <div className="row" key={rowIndex}>
